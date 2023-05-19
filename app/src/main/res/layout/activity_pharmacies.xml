@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pharmacies">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pharmacies"
+        android:textSize="38sp"
+        android:textColor="#4A3B9A"
+        android:textStyle="italic|bold"
+        android:layout_above="@id/scroll"
+        android:layout_centerHorizontal="true"
+        />
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="30dp"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/med1"
+                android:layout_width="340dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/medicinecard"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Al Ezaby" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/stockleft"
+                            android:backgroundTint="#9A86C6"
+                            android:gravity="center"
+                            android:text="Hotline: 19600"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/med2"
+                android:layout_below="@id/med1"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/medicinecard"
+                    android:foregroundTint="#03A9F4"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Misr Pharmacy"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/stockleft"
+                            android:backgroundTint="#9A86C6"
+                            android:gravity="center"
+                            android:text="Hotline: 19110"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/med3"
+                android:layout_below="@id/med2"
+                android:layout_marginTop="10dp"
+                android:layout_width="340dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/medicinecard"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Delmar ana Attalla" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/stockleft"
+                            android:backgroundTint="#9A86C6"
+                            android:gravity="center"
+                            android:text="Hotline: 19955"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_width="match_parent"-->
+
+            <!--                >-->
+            <!--            &lt;!&ndash; A CardView that contains a TextView &ndash;&gt;-->
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/card_view"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="200dp"-->
+
+
+            <!--                app:cardCornerRadius="4dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:paddingLeft="12dp"-->
+            <!--                    >-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="121dp"-->
+            <!--                        android:layout_height="91dp"-->
+            <!--                        android:background="@drawable/medd"-->
+            <!--/>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/info_text"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:text="Medicine 1"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+
+            <!--                    />-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/info_text1"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:text="8 :00 AM "-->
+            <!--                        android:layout_marginTop="2dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+
+            <!--                        />-->
+
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/info_text3"-->
+            <!--                        android:layout_width="167dp"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="7dp"-->
+            <!--                        android:layout_marginBottom="10dp"-->
+            <!--                        android:background="@drawable/edittext"-->
+            <!--                        android:backgroundTint="#891B9C"-->
+            <!--                        android:fontFamily="sans-serif-light"-->
+            <!--                        android:paddingLeft="7dp"-->
+            <!--                        android:paddingRight="10dp"-->
+            <!--                        android:text="14 tablets left "-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textColor="#F8F2F2"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+            <!--        </LinearLayout>-->
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

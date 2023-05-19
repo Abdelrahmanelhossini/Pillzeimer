@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".SignIn">
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="350dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/form"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:padding="17dp"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        >-->
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/logoheading"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            >-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="85dp"-->
+    <!--                android:layout_height="85dp"-->
+    <!--                android:layout_weight="0"-->
+    <!--                android:src="@drawable/logopill2"-->
+    <!--                />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/heading"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+
+    <!--                android:gravity="center"-->
+
+    <!--                android:text="Signin"-->
+    <!--                android:textColor="@color/black"-->
+
+
+    <!--                android:textSize="32sp" />-->
+    <!--        </LinearLayout>-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_marginTop="40dp"-->
+    <!--            android:id="@+id/comp"-->
+    <!--            android:layout_below="@id/logoheading"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            >-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/username"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textColorHint="@color/black"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:ems="10"-->
+    <!--                android:inputType="textPersonName"-->
+    <!--                android:hint="Username" />-->
+
+    <!--            <EditText-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:id="@+id/pass"-->
+    <!--                android:layout_below="@id/username"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textColorHint="@color/black"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:ems="10"-->
+    <!--                android:inputType="textPassword"-->
+    <!--                android:hint="Enter your Password" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/signbtn"-->
+    <!--                android:layout_below="@id/pass"-->
+    <!--                android:layout_marginTop="40dp"-->
+    <!--                android:background="@drawable/button"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:layout_centerHorizontal="true"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:text="Login" />-->
+
+    <!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:id="@+id/logintxt"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:textColor="@color/black"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:textSize="16sp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:layout_marginRight="20dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                    android:text="Already registered?" />&ndash;&gt;-->
+
+
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logopill2"
+            />
+        <LinearLayout
+            android:layout_below="@id/logo"
+            android:id="@+id/logoheading"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:text="Welcome Back!"
+                android:textColor="#4A3B9A"
+
+
+                android:textSize="40sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/comp"
+            android:layout_below="@id/logoheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#66A998CD"
+                android:fontFamily="sans-serif-medium"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                 />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/username"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#66A998CD"
+                android:fontFamily="sans-serif-medium"
+                android:ems="10"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                 />
+
+            <Button
+                android:id="@+id/signbtn"
+                android:layout_below="@id/pass"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Login" />
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/logintxt"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:layout_marginRight="20dp"-->
+            <!--                    android:text="Already registered?" />-->
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

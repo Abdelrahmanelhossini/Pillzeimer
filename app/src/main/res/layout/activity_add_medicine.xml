@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".AddMedicine">
+
+
+    <ImageView
+        android:id="@+id/prof"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profpic" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Add New Medication"
+        android:textStyle="italic"
+        android:layout_below="@id/prof"
+        android:textColor="#673AB7"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newmed"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        >
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:id="@+id/namestock"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/name"
+                android:paddingLeft="15dp"
+                android:inputType="textPersonName"
+                android:hint="Med Name"
+                android:fontFamily="sans-serif-medium"
+                android:ems="10"
+                android:backgroundTint="#66A998CD"
+                android:background="@drawable/edittext"
+
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+            <EditText
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/starttime"
+                android:paddingLeft="15dp"
+                android:inputType="time"
+                android:hint="Starting Time"
+                android:fontFamily="sans-serif-medium"
+                android:ems="10"
+                android:backgroundTint="#66A998CD"
+                android:background="@drawable/edittext"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dosage"
+            android:paddingLeft="15dp"
+            android:inputType="number"
+            android:hint="Dosage per day"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:backgroundTint="#66A998CD"
+            android:background="@drawable/edittext"
+            android:layout_below="@id/namestock"/>
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/stock"
+            android:paddingLeft="15dp"
+            android:inputType="number"
+            android:hint="Remaining pills in Pillzeimer"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:backgroundTint="#66A998CD"
+            android:background="@drawable/edittext"
+            android:layout_below="@id/dosage"/>
+<!--        <RadioGroup-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/groupradio"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:backgroundTint="#66A998CD"-->
+<!--            android:background="@drawable/edittext"-->
+<!--            android:layout_below="@id/dosage">-->
+
+<!--            <RadioButton-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="/Day"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/day"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:fontFamily="sans-serif-medium"/>-->
+
+<!--            <RadioButton-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="/Week"-->
+<!--                android:textSize="18sp"-->
+<!--                android:id="@+id/week"-->
+<!--                android:layout_weight="1"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                />-->
+<!--            <RadioButton-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="/Month"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/month"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                />-->
+
+<!--        </RadioGroup>-->
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:hint="Notes (Optional)"
+            android:background="@drawable/edittext"
+            android:backgroundTint="#66A998CD"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@id/stock"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notes"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginTop="26dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:fontFamily="sans-serif-black"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttondelete"
+                android:layout_marginTop="26dp"
+
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+
+                android:text="Delete"
+                android:id="@+id/delete"
+                android:fontFamily="sans-serif-black"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

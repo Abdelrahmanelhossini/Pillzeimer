@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    tools:context=".Profile"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Profile"
+        android:textStyle="italic|bold"
+        android:textColor="#4a3b9a"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nameheading"/>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/fullname"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/fname"
+
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:fontFamily="sans-serif-medium"
+        android:ems="10"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/lname"
+
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+
+        android:fontFamily="sans-serif-medium"
+        android:ems="10"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/age"
+
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:hint="Age"
+        android:fontFamily="sans-serif-medium"
+        android:ems="10"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/fullname"/>
+
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/groupradio"
+        android:orientation="horizontal"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/age">
+
+    <RadioButton
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:text="Male"
+        android:textSize="18sp"
+        android:id="@+id/male"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <RadioButton
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:text="Female"
+        android:textSize="18sp"
+        android:id="@+id/female"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="100dp"/>
+
+</RadioGroup>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/weight"
+
+        android:paddingLeft="15dp"
+        android:inputType="numberDecimal"
+        android:hint="Weight in Kg"
+        android:fontFamily="sans-serif-medium"
+        android:ems="10"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/groupradio"/>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/height"
+
+        android:paddingLeft="15dp"
+        android:inputType="number"
+        android:hint="Height in Cm"
+        android:fontFamily="sans-serif-medium"
+        android:ems="10"
+        android:backgroundTint="#66A998CD"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/weight"/>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btns"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/height">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/save"
+        android:text="Skip"
+        android:textColor="#4435ab"
+        android:id="@+id/skip"
+        android:fontFamily="sans-serif-black"
+        android:background="#00000000" />
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="20dp"-->
+
+
+    <!-- android:layout_marginBottom="602dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#8B8738F4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" First Name"-->
+
+
+    <!-- android:textColor="#471F8F" />-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="17dp"-->
+
+
+    <!-- android:layout_marginBottom="534dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#2CCE49E4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" Last Name" />-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="18dp"-->
+
+
+    <!-- android:layout_marginBottom="478dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#2CCE49E4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" Age" />-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="13dp"-->
+
+
+    <!-- android:layout_marginBottom="415dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#2CCE49E4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" Gender" />-->
+
+
+    <!-- <TextView-->
+
+
+    <!-- android:layout_width="78dp"-->
+
+
+    <!-- android:layout_height="35dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="319dp"-->
+
+
+    <!-- android:layout_marginBottom="674dp"-->
+
+
+    <!-- android:text="Gender" />-->
+
+
+    <!-- <RadioGroup-->
+
+
+    <!-- android:id="@+id/groupradio"-->
+
+
+    <!-- android:layout_width="392dp"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginLeft="10dp"-->
+
+
+    <!-- android:layout_marginTop="50dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:layout_marginBottom="295dp">-->
+
+
+    <!-- &lt;!&ndash; In RadioGroup create the 1 Radio Button&ndash;&gt;-->
+
+
+    <!-- &lt;!&ndash; like this we will add some more Radio Button&ndash;&gt;-->
+
+
+    <!-- <RadioButton-->
+
+
+    <!-- android:id="@+id/radia_id1"-->
+
+
+    <!-- android:layout_width="374dp"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:text="Male"-->
+
+
+    <!-- android:textSize="20sp" />-->
+
+
+    <!-- <RadioButton-->
+
+
+    <!-- android:id="@+id/radia_id2"-->
+
+
+    <!-- android:layout_width="374dp"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:text="Female"-->
+
+
+    <!-- android:textSize="20sp" />-->
+
+
+    <!-- </RadioGroup>-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="12dp"-->
+
+
+    <!-- android:layout_marginBottom="219dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#2CCE49E4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" Weight" />-->
+
+
+    <!-- <EditText-->
+
+
+    <!-- android:layout_width="395dp"-->
+
+
+    <!-- android:layout_height="57dp"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="8dp"-->
+
+
+    <!-- android:layout_marginBottom="165dp"-->
+
+
+    <!-- android:background="@drawable/custom_edittext"-->
+
+
+    <!-- android:backgroundTint="#2CCE49E4"-->
+
+
+    <!-- android:fontFamily="sans-serif-black"-->
+
+
+    <!-- android:hint=" Height"-->
+
+
+    <!-- />-->
+
+
+    <!-- <Button-->
+
+
+    <!-- android:id="@+id/saveBtn"-->
+
+
+    <!-- android:layout_width="wrap_content"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="264dp"-->
+
+
+    <!-- android:layout_marginBottom="103dp"-->
+
+
+    <!-- android:text="Save"-->
+
+
+    <!-- />-->
+
+
+    <!--&lt;!&ndash; <Button&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:id="@+id/clear"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_width="wrap_content"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_height="wrap_content"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_alignParentEnd="true"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_alignParentBottom="true"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_marginLeft="20dp"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_marginTop="200dp"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_marginEnd="255dp"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:layout_marginBottom="35dp"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:text="Clear"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:textSize="20sp"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; android:textStyle="bold" />&ndash;&gt;-->
+
+
+    <!-- <Button-->
+
+
+    <!-- android:id="@+id/skipBtn"-->
+
+
+    <!-- android:layout_width="wrap_content"-->
+
+
+    <!-- android:layout_height="wrap_content"-->
+
+
+    <!-- android:layout_alignParentEnd="true"-->
+
+
+    <!-- android:layout_alignParentBottom="true"-->
+
+
+    <!-- android:layout_marginEnd="50dp"-->
+
+
+    <!-- android:layout_marginBottom="110dp"-->
+
+
+    <!-- android:text="Skip" />-->
+
+
+</RelativeLayout>
